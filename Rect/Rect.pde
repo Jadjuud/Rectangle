@@ -1,4 +1,3 @@
-size(300, 400);
-fullscreen();
-float x=0, y=0;
-rect(x, y, displayWidth, displayHeight);
+fullScreen();
+float x=displayWidth*1/4, y=displayHeight*1/4, displayWidthRect=displayWidth*1/2, displayHeightRect=displayHeight*1/2;
+rect(x, y, displayWidthRect, displayHeightRect);
