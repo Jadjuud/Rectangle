@@ -4,14 +4,14 @@ color colourStroke, colourFill, backgroundColour;
 float x=displayWidth*1/4, y=displayHeight*1/4, displayWidthRect=displayWidth*1/2, displayHeightRect=displayHeight*1/2;
 int thin=width*1/50, thick=2*thin;
 Boolean NightMode=true; //off for false
-Boolean randomBackground = false; //off for false
+Boolean randomBackground = true; //off for false
 if ( randomBackground == true ) {
  backgroundColour = color(random(0, 255), random(255), random(255) );
 } else {
  backgroundColour = black;
 }
 background(backgroundColour);
-background(black);
+//background(black);
 strokeWeight(thick);
 if ( NightMode == true ) {
 colourStroke = yellowNight;
